@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name_dev">hellowworlddev</string>
+    <string name="app_name_test">hellowworldtest</string>
+    <string name="app_name">hellowWorld</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,5 @@
+﻿{
+  "Environment": "Test",
+  "EndPointURL": "https://exampleTest.com",
+  "Secret": "SecretTest"
+}
