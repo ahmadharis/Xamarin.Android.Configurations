@@ -30,7 +30,7 @@ namespace HA.Service
         /// <summary>
         /// Read the configuration files and return Configuration Object
         /// </summary>
-        public Configuration Read()
+        private Configuration Read()
         {
             var assembly = Assembly.GetExecutingAssembly();
             string resourceName = "HA.Service.Config.json";
