@@ -9,7 +9,7 @@ namespace HA.Service
     /// <summary>
     /// Configuration Manager
     /// </summary>
-    public class ConfigurationManager
+    public sealed class ConfigurationManager
     {
         /// <summary>
         /// holds a reference to the single created instance, if any.
@@ -22,11 +22,14 @@ namespace HA.Service
         public static ConfigurationManager Instance { get; } = lazy.Value;
 
         public Configuration JSONConfiguration { get; set; }
-        public ConfigurationManager()
+        private ConfigurationManager()
         {
             JSONConfiguration = this.Read();
         }
 
+        /// <summary>
+        /// Read the configuration files and return Configuration Object
+        /// </summary>
         public Configuration Read()
         {
             var assembly = Assembly.GetExecutingAssembly();

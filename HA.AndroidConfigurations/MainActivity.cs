@@ -27,10 +27,10 @@ namespace HA.AndroidConfigurations
             
             var view = LayoutInflater.Inflate(Resource.Layout.content_main, null, false);
             SetContentView(Resource.Layout.activity_main);
-            ConfigurationManager configs = ConfigurationManager.Instance;
+            ConfigurationManager configurationManager = ConfigurationManager.Instance;
             TextView textView = new TextView(this)
             {
-                Text = configs.JSONConfiguration.APIKey
+                Text = configurationManager.JSONConfiguration.APIKey
             };
 
             RelativeLayout llMain = FindViewById<RelativeLayout>(Resource.Id.relativeMainContent);

@@ -1,5 +1,5 @@
 ﻿{
-  "Environment": "Test",
-  "APIEndPoint": "https://exampleTest.com",
-  "APIKey": "SecretTest"
+  "Environment": "Prod",
+  "APIEndPoint": "https://exampleprod.com",
+  "APIKey": "SecretProd"
 }
