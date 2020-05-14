@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{AE7B9E40-188A-4FDC-BA3D-B50C3F35520A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HA.Service", "HAService\HA.Service.csproj", "{AE7B9E40-188A-4FDC-BA3D-B50C3F35520A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidConfigurations", "AndroidConfigurations\AndroidConfigurations.csproj", "{AD23E063-4721-4512-AEE4-7A1072EF5898}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HA.AndroidConfigurations", "HA.AndroidConfigurations\HA.AndroidConfigurations.csproj", "{AD23E063-4721-4512-AEE4-7A1072EF5898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

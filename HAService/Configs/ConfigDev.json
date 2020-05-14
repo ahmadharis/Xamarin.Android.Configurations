@@ -1,0 +1,5 @@
+﻿{
+  "Environment": "Dev",
+  "APIEndPoint": "https://exampledev.com",
+  "APIKey": "SecretDevs"
+}

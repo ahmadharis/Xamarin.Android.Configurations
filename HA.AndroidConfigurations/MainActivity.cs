@@ -6,11 +6,17 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Service;
+using HA.Service;
 
-namespace hellowworld
+namespace HA.AndroidConfigurations
 {
+#if DEV
+    [Activity(Label = "@string/app_name_dev", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+#elif TEST
+    [Activity(Label = "@string/app_name_test", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+#elif PROD
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+#endif
     public class MainActivity : AppCompatActivity
     {
 
@@ -21,10 +27,10 @@ namespace hellowworld
             
             var view = LayoutInflater.Inflate(Resource.Layout.content_main, null, false);
             SetContentView(Resource.Layout.activity_main);
-            AppConfig configs = new AppConfig();
+            ConfigurationManager configs = ConfigurationManager.Instance;
             TextView textView = new TextView(this)
             {
-                Text = configs.Hello
+                Text = configs.JSONConfiguration.APIKey
             };
 
             RelativeLayout llMain = FindViewById<RelativeLayout>(Resource.Id.relativeMainContent);

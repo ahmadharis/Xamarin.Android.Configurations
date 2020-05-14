@@ -1,5 +1,0 @@
-﻿{
-  "Environment": "Prod",
-  "EndPointURL": "https://exampleprod.com",
-  "Secret": "SecretProd"
-}
