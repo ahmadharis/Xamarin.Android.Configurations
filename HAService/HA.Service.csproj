@@ -41,7 +41,7 @@
     <EmbeddedResource Include="Config.json" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
   <Target Name="CopyFiles" BeforeTargets="PrepareForBuild">
     <Copy SourceFiles="$(ProjectDir)\Configs\Config$(Configuration).json" DestinationFiles="$(ProjectDir)\Config.json" />
